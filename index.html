@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Test </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    
+    <!-- NProgress -->
+    <link href="css/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="css/green.css" rel="stylesheet">
+    
+    <!-- bootstrap-progressbar -->
+    <link href="css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="css/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="css/daterangepicker.css" rel="stylesheet">
+    
+    <!-- Custom Theme Style -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link rel="stylesheet" href="font/weathericons-regular-webfont.eot">
+    <link rel="stylesheet" href="font/weathericons-regular-webfont.svg">
+    <link rel="stylesheet" href="font/weathericons-regular-webfont.ttf">
+    <link rel="stylesheet" href="font/weathericons-regular-webfont.woff">
+    <link rel="stylesheet" href="font/weathericons-regular-webfont.woff2">
+</head>
+ <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div >
+           
+            <!-- sidebar menu -->
+           <div  class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+               
+                    <ul class="nav side-menu" style="">
+                    <li> <a href="index.html" class="main"> Home</a></li>
+                      <li ><a href="index.html" class="main-menu"> Temperature </a>
+                      <li ><a href="index.html" class="main-menu"> Humidity</a>
+                      <li ><a href="index.html" class="main-menu"> CO2 </a>
+                      <li ><a href="index.html" class="main-menu"> Pressure </a>
+                    </ul> 
+              </div>
+   
+                    
+            </div>
+            </div>
+            <!-- /sidebar menu -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">John Doe
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <div class="center_btn">
+            <div class="row top_tiles">
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon">       <i class=" wi wi-thermometer
+"></i></i></div>
+                  <div class="count">24 <li class="wi wi-celsius"></li></div>
+                  <br>
+                  <h3>Temperature</h3>
+                  
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="wi wi-humidity"></i></div>
+                  <div class="count">50 <span ><sup class="myPercent">%</sup></span></div>
+                  <br>
+                  <h3>Humidity</h3>
+                
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="wi wi-barometer"></i></div>
+                  <div class="count">400<sup class="ppm">PPM</sup></div>
+                  <br>
+                  <h3>CO <sub>2</sub></h3>
+                 
+                </div>
+              </div>
+              <div class="animated flipInY col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="tile-stats">
+                  <div class="icon"><i class="wi wi-small-craft-advisory
+"></i></div>
+                  <div class="count">1003 <sup class="millibars">(Millibars)</sup></div>
+                  
+                  <br>
+                  <h3>Pressure</h3>
+                </div>
+              </div>
+            </div>
+
+                       <!-- Top menu -->            
+<div class="but_menu">
+            <div class="btn-group btn1">
+                    <button data-toggle="dropdown" class="btn btn-success btn-lg" type="button" aria-expanded="false"># Hive <span class="caret"></span>
+                    </button>
+                    <ul role="menu" class="dropdown-menu">
+                      <li><a href="#">Action</a>
+                      </li>
+                      <li><a href="#">Another action</a>
+                      </li>
+                      <li><a href="#">Something else here</a>
+                      </li>
+                      <li class="divider"></li>
+                      <li><a href="#">Separated link</a>
+                      </li>
+                    </ul>
+</div >
+
+                    <button type="button" class="btn btn-success btn-lg">Hive 1</button>
+                    <button type="button" class="btn btn-success btn-lg">Hive 2</button>
+                    <button type="button" class="btn btn-success btn-lg">Hive 3</button>
+                    <button type="button" class="btn btn-success btn-lg">Hive 4</button>
+                    <button type="button" class="btn btn-success btn-lg">Hive 5</button>
+              </div>
+</div>
+<!-- Top menu -->
+
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Transaction Summary <small>Weekly progress</small></h2>
+                    <div class="filter">
+                      <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                        <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <div class="demo-container" style="height:280px">
+                        <div id="chart_plot_02" class="demo-placeholder"></div>
+                      </div>
+                      <div class="tiles">
+                        <div class="col-md-4 tile">
+                          <span>Total Sessions</span>
+                          <h2>231,809</h2>
+                          <span class="sparkline11 graph" style="height: 160px;">
+                               <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                          </span>
+                        </div>
+                        <div class="col-md-4 tile">
+                          <span>Total Revenue</span>
+                          <h2>$231,809</h2>
+                          <span class="sparkline22 graph" style="height: 160px;">
+                                <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                          </span>
+                        </div>
+                        <div class="col-md-4 tile">
+                          <span>Total Sessions</span>
+                          <h2>231,809</h2>
+                          <span class="sparkline11 graph" style="height: 160px;">
+                                 <canvas width="200" height="60" style="display: inline-block; vertical-align: top; width: 94px; height: 30px;"></canvas>
+                          </span>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <i class=" wi wi-thermometer
+"></i>
+<div>
+  <i class="wi wi-day-sunny"></i>
+</div>
+
+        <!-- /page content -->
+
+<!-- /footer content -->
+                   <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="js/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="js/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="js/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="js/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="js/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="js/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="js/skycons.js"></script>
+    <!-- Flot -->
+    <script src="js/jquery.flot.js"></script>
+    <script src="js/jquery.flot.pie.js"></script>
+    <script src="js/jquery.flot.time.js"></script>
+    <script src="js/jquery.flot.stack.js"></script>
+    <script src="js/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="js/jquery.flot.orderBars.js"></script>
+    <script src="js/jquery.flot.spline.min.js"></script>
+    <script src="js/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="js/date.js"></script>
+    <!-- JQVMap -->
+    <script src="js/jquery.vmap.js"></script>
+    <script src="js/jquery.vmap.world.js"></script>
+    <script src="js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.min.js"></script>
+
+     
+</body>
+</html>
+
